@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import SuperHeroSearch from "./SuperHeroSearch";
 
 const API = "http://superheroapi.com/api.php/163762711460288/search";
 
@@ -36,7 +37,11 @@ class SuperHeroDB extends Component {
 
   render() {
     console.log("hello?", this.state.superHeroName);
-    return <div>hey</div>;
+    return (
+      <div>
+        <SuperHeroSearch />
+      </div>
+    );
   }
 }
 
