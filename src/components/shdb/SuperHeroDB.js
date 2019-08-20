@@ -39,7 +39,7 @@ class SuperHeroDB extends Component {
     console.log("hello?", this.state.superHeroName);
     return (
       <div>
-        <SuperHeroSearch />
+        <SuperHeroSearch searchSuperHero={this.getSuperHero.bind(this)} />
       </div>
     );
   }
