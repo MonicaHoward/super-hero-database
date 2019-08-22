@@ -10,7 +10,7 @@ class SuperHeroDB extends Component {
 
     this.state = {
       image: "",
-      superHeroName: "Superman",
+      superHeroName: "",
       realName: "",
       alignmnent: ""
     };
@@ -22,14 +22,8 @@ class SuperHeroDB extends Component {
     fetch(URL)
       .then(res => res.json())
       .then(data => {
-        console.log("test", data);
-
         this.setState({
           superHeroName: data.results.name
-          // superHeroName: data.results.name,
-          // realName: data.biography.fullname,
-          // alignmnent: data.biolgraphy.alignment,
-          // image: data.image.url
         });
         console.log("yoooo?", data.results[0].name);
         console.log("yoooo?", data.results.map(x => x.name));

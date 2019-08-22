@@ -4,14 +4,15 @@ class SuperHeroSearch extends Component {
   submitSearch = e => {
     e.preventDefault();
     let value = this.refs.superHeroName.value;
+    console.log("Blip", value);
     this.props.searchSuperHero(value);
-    this.ref.superHeroName.value = "";
+    this.refs.superHeroName.value = "";
   };
 
   render() {
     return (
       <div>
-        <form>
+        <form onSubmit={this.submitSearch.bind(this)}>
           <label>
             <input
               placeholder="enter your favorite superhero"
