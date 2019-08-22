@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
-import SuperHeroDB from "./components/shdb/SuperHeroDB";
+import Header from "./components/Header";
 
 function App() {
   return (
     <div className="App">
-      <SuperHeroDB />
+      <Header />
     </div>
   );
 }

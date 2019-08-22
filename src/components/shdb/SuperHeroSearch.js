@@ -15,7 +15,8 @@ class SuperHeroSearch extends Component {
         <form onSubmit={this.submitSearch.bind(this)}>
           <label>
             <input
-              placeholder="enter your favorite superhero"
+              className="main-search"
+              placeholder="enter your favorite superhero..."
               type="search"
               ref="superHeroName"
             />
